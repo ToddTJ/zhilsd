@@ -1,0 +1,173 @@
+<!--
+ * @Description: 拼华夏官网
+ * @Author: shendanlei
+ * @Date: 2025-08-21 10:44:38
+ * @LastEditors: shendanlei
+ * @LastEditTime: 2025-08-21 15:10:21
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拼华夏</title>
+  <!-- 引入公共 CSS -->
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <!-- 产品专属样式 -->
+  <style>
+    /* 全局滚动条隐藏 - 针对所有元素 */
+    * {
+      box-sizing: border-box;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+    *::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+    *{box-sizing:border-box}
+    body {
+      height: 100%;
+      margin: 0;
+      background-color: #F2F3F8;
+      overflow-x: hidden;
+      font-size:12px;
+    }
+    section {
+      padding-top: 80px;
+      text-align: center;
+    }
+    .bg-pic {
+      width: 100%;
+      height: auto;
+    }
+    .center-pic {
+      width: 70%;
+      height: auto;
+    }
+    .top-wrap {
+      position: relative
+    }
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .logo {
+      width: 90px;
+      position: absolute;
+      left: 30px;
+      top: 20px;
+    }
+    .nav ul {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+    .nav a.link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    footer {
+      position: relative;
+      height: 250px;
+      padding-top: 30px;
+      background-color: #414143;
+    }
+    .icptext {
+      width: 100%;
+      position: absolute;
+      bottom: 30px;
+      text-align: center;
+      color: #999999;
+    }
+    .icp-link {
+      color: #999999;
+    }
+    .foot {
+      display:flex;
+      justify-content: center;
+    }
+    .qr-pic {
+      width: 100px;
+      height: 100px;
+    }
+    .qr-wrap {
+      margin-left: 200px;
+      text-align: center;
+    }
+    .contact {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .text {
+      color: #999999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-wrap">
+      <img class="bg-pic" src="images/image1.png" alt="" />
+      <nav class="nav" aria-label="主导航">
+        <img class="logo" src="images/image-logo.png" alt="智链时代" />
+        <ul>
+          <li><a class="link" href="#solution">解决方案</a></li>
+          <li><a class="link" href="#custom">客户案例</a></li>
+          <li><a class="link" href="#aboutus">关于我们</a></li>
+          <li><a class="link" href="#contact">联系方式</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 关于我们 -->
+  <section id="aboutus">
+    <img class="center-pic" src="images/image2.png" alt="" />
+  </section>
+  <section>
+    <img class="bg-pic" src="images/image3.png" alt="" />
+  </section>
+  <!-- 解决方案 -->
+  <section id="solution">
+    <img class="center-pic" src="images/image4.png" alt="解决方案" />
+  </section>
+  <section>
+    <img class="bg-pic" src="images/image5.png" alt="" />
+  </section>
+  <!-- 客户案例 -->
+  <section id="custom">
+    <img class="center-pic" src="images/image6.png" alt="" />
+  </section>
+  <!-- 联系方式 -->
+  <section id="contact">
+  </section>
+  <!-- 公共底部 -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <p class="contact">联系我们</p>
+        <p class="text">地址：浙江省杭州市西湖区西溪银座D座368室智链时代</p>
+        <p class="text">联系电话：400-1234-1234</p>
+        <p class="text">邮箱：support@zhilsd.com</p>
+      </div>
+      <div class="qr-wrap">
+        <img class="qr-pic" src="images/qrcode.png" alt="" />
+        <div class="text">公众号智链时代</div>
+      </div>
+    </div>
+    <div class="icptext">备案号：
+      <a class="icp-link" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/recordQuery">浙ICP备2025186490号-5</a>、
+      <a class="icp-link" target="_blank" href="http://192.168.6.42/user/box/agreementPage?type=service">服务条款</a>、
+      <a class="icp-link" target="_blank" href="http://192.168.6.42/user/box/agreementPage?type=privacy">隐私政策</a>
+    </div>
+  </footer>
+</body>
+</html>
